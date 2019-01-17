@@ -46,7 +46,7 @@ header ul li a{
 .todo-container
 {
     border: 1px solid grey;
-    width: 30%;
+    width: 50%;
     height: 450px;
     margin: 0 auto;
     margin-top: 130px;
@@ -61,6 +61,7 @@ header ul li a{
     border: inherit;
     border-radius: inherit;
     background-color: inherit;
+   
 }
 
 .todo-heading-div{
@@ -80,11 +81,11 @@ header ul li a{
 }
 
 .todo-input-div input{
-    width: 70%;
+    width: 80%;
     height: 30px;
     text-indent: 5px;
     border-radius: 12px;
-    
+    border: 1px solid grey;
 }
 
 .todo-list{
@@ -105,20 +106,35 @@ header ul li a{
     background-color: #bdbdbd;
 }
 
-/* .todo-list ul{
-    overflow-x: hidden;
-    overflow: scroll;
-} */
+.todo-list ul{
+    border: 1px solid;
+    
+}
 
 .todo-list ul li{
-    /* border: 1px solid; */
-    width: 90%;
+    border: 1px solid;
+    width: 70%;
     /* padding: 5px; */
    /* text-align: center; */
 }
 
-.todo-list ul li button
+
+button{
+    background: transparent;
+    border-radius: 12px;
+    border: 1px solid #4CAF50
+}
+
+button:hover{
+    background: transparent;
+    border-radius: 12px;
+    background-color: #8BC34A;
+}
+.todo-list ul button
 {
     float: right;
-    margin-top: -33px;
+    margin-top: -30px;
+    margin-left: 5px;
+    display: inline-table;
+   
 }

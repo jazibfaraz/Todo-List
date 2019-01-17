@@ -19,6 +19,9 @@ function addTodoList()
 function appendTodoList(valueFromInput)
 {
   return `
-  <li><p id="list-text">${valueFromInput}</p><button type="button">edit</button></li>
+  <li><p id="list-text">${valueFromInput}</p>
+  </li><button type="button">edit</button>
+  <button type="button">update</button>
+  <button type="button">delete</button>
   `
 }
