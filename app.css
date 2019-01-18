@@ -7,7 +7,7 @@ header {
     border: 1px solid black;
     width: 100%;
     height: 50px;
-    background-color: #4CAF50;
+    background-color: #009688;
 }
 
 header ul li{
@@ -46,7 +46,7 @@ header ul li a{
 .todo-container
 {
     border: 1px solid grey;
-    width: 50%;
+    width: 70%;
     height: 450px;
     margin: 0 auto;
     margin-top: 130px;
@@ -93,6 +93,7 @@ header ul li a{
     margin-top: 20px;
     overflow-x: hidden;
     overflow-y: scroll;
+    
 }
 
 .todo-list::-webkit-scrollbar
@@ -106,35 +107,42 @@ header ul li a{
     background-color: #bdbdbd;
 }
 
-.todo-list ul{
-    border: 1px solid;
+
+.todo-p-div{
+    border-top-left-radius: 0px;
+    width: 60%;
+    height: 50px;
+    margin-left: 10px;
+    /* color: #fff; */
+    background: #009688;
+    margin-top: 10px;
     
 }
 
-.todo-list ul li{
-    border: 1px solid;
-    width: 70%;
-    /* padding: 5px; */
-   /* text-align: center; */
+.todo-list-button-div{
+   
+    float: right;
+    margin-top: -52px;
+    padding: 5px;
+    height: 40px;
+    width: 35%;
+
+    
 }
 
-
 button{
-    background: transparent;
+    margin-right: 5px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid #009688;
+    width: 70px;
     border-radius: 12px;
-    border: 1px solid #4CAF50
+    
+    
 }
 
 button:hover{
-    background: transparent;
-    border-radius: 12px;
-    background-color: #8BC34A;
-}
-.todo-list ul button
-{
-    float: right;
-    margin-top: -30px;
-    margin-left: 5px;
-    display: inline-table;
-   
+    background-color: #009688;
+    /* border: none; */
+    color: #fff;
 }

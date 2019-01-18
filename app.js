@@ -9,19 +9,29 @@ function addTodoList()
   console.log(valueFromInput)
   var funcInVar = appendTodoList(valueFromInput);
   
-  var ulTag = document.getElementById('ul');
-
+  var htmlBody = document.getElementById('body')
+  var ulTag = htmlBody.querySelector('.todo-list');
+  console.log(ulTag)
   ulTag.innerHTML+=funcInVar;
 
-
+  
 }
 
 function appendTodoList(valueFromInput)
 {
   return `
-  <li><p id="list-text">${valueFromInput}</p>
-  </li><button type="button">edit</button>
-  <button type="button">update</button>
-  <button type="button">delete</button>
+  
+  
+    <div class="todo-p-div">
+      <p>${valueFromInput}</p>
+    </div>
+
+    <div class="todo-list-button-div">
+      <button type="button">edit</button>
+      <button type="button">update</button>
+      <button type="button">delete</button>
+    </div>
+
+  
   `
 }
