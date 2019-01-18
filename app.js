@@ -5,7 +5,7 @@ function addTodoList()
 {
   
   var valueFromInput = document.getElementById('input').value;
-  document.getElementById('input').innerText = ' ';
+  document.getElementById('input').value = ' ';
   console.log(valueFromInput)
   var funcInVar = appendTodoList(valueFromInput);
   
@@ -23,15 +23,23 @@ function appendTodoList(valueFromInput)
   
   
     <div class="todo-p-div">
-      <p>${valueFromInput}</p>
+      <p id="todo-p">${valueFromInput}</p>
     </div>
 
     <div class="todo-list-button-div">
-      <button type="button">edit</button>
+      <button type="button" onClick="editTodo()">edit</button>
       <button type="button">update</button>
       <button type="button">delete</button>
     </div>
 
   
   `
+}
+
+function editTodo()
+{
+  var existingVal = document.getElementById('todo-p').innerText;
+  document.getElementById('input').value = existingVal;
+  console.log('hogya');
+  
 }

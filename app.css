@@ -57,6 +57,8 @@ header ul li a{
     padding: 5px;
 }
 
+
+
 .todo-container div{
     border: inherit;
     border-radius: inherit;
@@ -64,7 +66,9 @@ header ul li a{
    
 }
 
+
 .todo-heading-div{
+    background-color: #009688;
     text-align: center;
     margin-top: 5px;
     height: 40px;
@@ -136,6 +140,7 @@ button{
     background-color: transparent;
     border: 1px solid #009688;
     width: 70px;
+    height: 25px;
     border-radius: 12px;
     
     
